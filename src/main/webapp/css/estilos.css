@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f3f5f8;
+    color: #1f2933;
+}
+
+main {
+    max-width: 860px;
+    margin: 32px auto;
+    padding: 24px 28px;
+    background: #ffffff;
+    border: 1px solid #d8dee6;
+    border-radius: 8px;
+}
+
+button, input, select {
+    font-family: inherit;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #12355b;
+}
+
+.boton {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 0;
+    border-radius: 6px;
+    background: #12355b;
+    color: #ffffff;
+    font-size: 0.95rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    margin-top: 18px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #d8dee6;
+    text-align: left;
+}
+
+th {
+    background: #eaf1fb;
+    color: #12355b;
+}
+
+td form {
+    margin: 0;
+}
+
+.eliminar {
+    padding: 4px 10px;
+    border: 1px solid #b3261e;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #b3261e;
+    cursor: pointer;
+}
+
+.vacio {
+    margin-top: 18px;
+    color: #52606d;
+}
+
+.error {
+    padding: 8px 12px;
+    border-left: 4px solid #b3261e;
+    background: #fdecea;
+}
+
+.formulario {
+    display: grid;
+    gap: 6px;
+    max-width: 460px;
+}
+
+.formulario label {
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.formulario input,
+.formulario select {
+    padding: 8px;
+    border: 1px solid #b8c2cc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+}
