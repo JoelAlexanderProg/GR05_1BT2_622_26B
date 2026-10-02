@@ -31,7 +31,15 @@ public class ObjetoEncontradoServlet extends HttpServlet {
         if ("nuevo".equals(request.getParameter("accion"))) {
             mostrarFormulario(request, response);
         } else {
-            request.setAttribute("objetos", dao.listar());
+            String categoria = limpiar(request.getParameter("categoria"));
+            request.setAttribute("categorias", CATEGORIAS);
+            request.setAttribute("categoriaSeleccionada", categoria);
+
+            if (categoria != null && !categoria.isEmpty()) {
+                request.setAttribute("objetos", dao.listarPorCategoria(categoria));
+            } else {
+                request.setAttribute("objetos", dao.listar());
+            }
             request.getRequestDispatcher("/WEB-INF/vistas/lista.jsp").forward(request, response);
         }
     }

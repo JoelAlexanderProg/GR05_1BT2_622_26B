@@ -13,6 +13,19 @@
     <h1>Objetos encontrados en el campus</h1>
     <a class="boton" href="${pageContext.request.contextPath}/objetos?accion=nuevo">Registrar objeto</a>
 
+    <form method="get" action="${pageContext.request.contextPath}/objetos" class="filtro-categoria">
+        <label for="categoria">Filtrar por categoría</label>
+        <select id="categoria" name="categoria">
+            <option value="" ${empty categoriaSeleccionada ? 'selected' : ''}>Todas</option>
+            <c:forEach var="categoria" items="${categorias}">
+                <option value="${categoria}" ${categoria == categoriaSeleccionada ? 'selected' : ''}>
+                    <c:out value="${categoria}"/>
+                </option>
+            </c:forEach>
+        </select>
+        <button type="submit">Aplicar</button>
+    </form>
+
     <c:choose>
         <c:when test="${empty objetos}">
             <p class="vacio">Todavía no hay objetos registrados.</p>

@@ -32,6 +32,19 @@ public class ObjetoEncontradoDAO {
         }
     }
 
+    public List<ObjetoEncontrado> listarPorCategoria(String categoria) {
+        EntityManager em = JPAUtil.getEntityManager();
+        try {
+            return em.createQuery(
+                    "SELECT o FROM ObjetoEncontrado o WHERE o.categoria = :categoria ORDER BY o.fecha DESC, o.id DESC",
+                    ObjetoEncontrado.class)
+                    .setParameter("categoria", categoria)
+                    .getResultList();
+        } finally {
+            em.close();
+        }
+    }
+
     public void eliminar(Long id) {
         EntityManager em = JPAUtil.getEntityManager();
         try {
