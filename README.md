@@ -37,8 +37,8 @@ src/main/webapp/
 Solo se necesita Java 17 o superior. Maven y Tomcat se descargan automáticamente la primera vez.
 
 ```bash
-# Windows
-mvnw.cmd package cargo:run
+# Windows (PowerShell o símbolo del sistema)
+.\mvnw.cmd package cargo:run
 
 # Linux o macOS
 ./mvnw package cargo:run
