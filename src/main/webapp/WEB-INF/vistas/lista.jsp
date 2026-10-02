@@ -28,7 +28,9 @@
 
     <c:choose>
         <c:when test="${empty objetos}">
-            <p class="vacio">Todavía no hay objetos registrados.</p>
+            <p class="vacio">
+                ${empty categoriaSeleccionada ? 'Todavía no hay objetos registrados.' : 'No hay objetos en esta categoría.'}
+            </p>
         </c:when>
         <c:otherwise>
             <table>

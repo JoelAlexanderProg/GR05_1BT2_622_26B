@@ -2,7 +2,7 @@
 
 Ejemplo de aplicación web con Java para la Tarea 2 de Metodologías Ágiles (ISWD622, EPN, 2026-B), Grupo 5.
 
-Permite registrar los objetos encontrados en el campus, verlos en una lista y eliminarlos.
+Permite registrar los objetos encontrados en el campus, verlos en una lista, filtrarlos por categoría y eliminarlos.
 
 ## Tecnologías
 

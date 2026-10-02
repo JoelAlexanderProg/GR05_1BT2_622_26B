@@ -102,3 +102,25 @@ td form {
     gap: 16px;
     margin-top: 16px;
 }
+
+.filtro-categoria {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.filtro-categoria select {
+    padding: 6px 8px;
+    border: 1px solid #b8c2cc;
+    border-radius: 6px;
+}
+
+.filtro-categoria button {
+    padding: 6px 12px;
+    border: 1px solid #12355b;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #12355b;
+    cursor: pointer;
+}
